@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Telegramm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\interfaces\\companyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:interfaces\\companyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\interfaces\\icompanyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:interfaces\\icompanyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\command\\inncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:command\\inncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\mainbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:mainbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\commandfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:commandfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\interfaces\\icommandfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:interfaces\\icommandfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\companyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:companyinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\interfaces\\ibotcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:interfaces\\ibotcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\configuration\\botconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:configuration\\botconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\configuration\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:configuration\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\command\\okvedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|solutionrelative:command\\okvedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{09BBA01A-EA25-4CD6-8A2E-D537A336BA83}|Telegramm.csproj|c:\\users\\user\\source\\repos\\telegramm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,139 +29,77 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 307,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 93,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CompanyInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\CompanyInfoService.cs",
-              "RelativeDocumentMoniker": "interfaces\\CompanyInfoService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\CompanyInfoService.cs",
-              "RelativeToolTip": "interfaces\\CompanyInfoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T12:01:52.825Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICompanyInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\ICompanyInfoService.cs",
-              "RelativeDocumentMoniker": "interfaces\\ICompanyInfoService.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\ICompanyInfoService.cs",
-              "RelativeToolTip": "interfaces\\ICompanyInfoService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T12:01:15.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InnCommand.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\Command\\InnCommand.cs",
-              "RelativeDocumentMoniker": "Command\\InnCommand.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\Command\\InnCommand.cs",
-              "RelativeToolTip": "Command\\InnCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T12:00:41.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "CommandFactory.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\CommandFactory.cs",
               "RelativeDocumentMoniker": "CommandFactory.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\CommandFactory.cs",
               "RelativeToolTip": "CommandFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:59:16.952Z",
+              "WhenOpened": "2024-08-09T18:31:53.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OkvedCommand.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\Command\\OkvedCommand.cs",
+              "RelativeDocumentMoniker": "Command\\OkvedCommand.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\Command\\OkvedCommand.cs",
+              "RelativeToolTip": "Command\\OkvedCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T18:29:02.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompanyInfoService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\CompanyInfoService.cs",
+              "RelativeDocumentMoniker": "CompanyInfoService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\CompanyInfoService.cs",
+              "RelativeToolTip": "CompanyInfoService.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAowMAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T15:00:18.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainBot.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\MainBot.cs",
+              "RelativeDocumentMoniker": "MainBot.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\MainBot.cs",
+              "RelativeToolTip": "MainBot.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAiwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T12:48:43.563Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ICommandFactory.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\ICommandFactory.cs",
-              "RelativeDocumentMoniker": "interfaces\\ICommandFactory.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\ICommandFactory.cs",
-              "RelativeToolTip": "interfaces\\ICommandFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:58:38.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IBotCommand.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\IBotCommand.cs",
-              "RelativeDocumentMoniker": "interfaces\\IBotCommand.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\interfaces\\IBotCommand.cs",
-              "RelativeToolTip": "interfaces\\IBotCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:53:03.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BotConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\Configuration\\BotConfiguration.cs",
-              "RelativeDocumentMoniker": "Configuration\\BotConfiguration.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\Configuration\\BotConfiguration.cs",
-              "RelativeToolTip": "Configuration\\BotConfiguration.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAcAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:51:15.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\Configuration\\appsettings.json",
-              "RelativeDocumentMoniker": "Configuration\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\Configuration\\appsettings.json",
-              "RelativeToolTip": "Configuration\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-09T11:47:35.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Telegramm\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Telegramm\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwBEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-09T11:42:31.38Z",
+              "WhenOpened": "2024-08-09T12:45:39.573Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 93,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

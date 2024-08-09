@@ -1,10 +1,14 @@
-﻿public class InnCommand : IBotCommand
+﻿using Telegram.Bot;
+
+public class InnCommand : IBotCommand
 {
     private readonly ICompanyInfoService _companyInfoService;
+    private readonly ITelegramBotClient _botClient;
 
-    public InnCommand(ICompanyInfoService companyInfoService)
+    public InnCommand(ICompanyInfoService companyInfoService, ITelegramBotClient botClient)
     {
         _companyInfoService = companyInfoService;
+        _botClient = botClient;
     }
 
     public async Task<string> Execute(string message, long chatId)
@@ -22,14 +26,40 @@
             }
 
             var results = await _companyInfoService.GetCompaniesByInn(innNumbers);
-            return string.Join("\n", results);
+            var resultMessage = string.Join("\n", results);
+
+            const int MaxMessageLength = 4096;
+            if (resultMessage.Length > MaxMessageLength)
+            {
+                var parts = SplitMessage(resultMessage, MaxMessageLength);
+                foreach (var part in parts)
+                {
+                    await SendMessage(chatId, part); // Отправка частей по очереди
+                }
+                return null; // Возвращаем null, чтобы не отправлять основное сообщение
+            }
+            return resultMessage;
         }
         catch (Exception ex)
         {
-            // Логирование ошибки
-            Console.WriteLine($"Ошибка в InnCommand: {ex.Message}");
+            Console.WriteLine($"Ошибка при выполнении команды /inn: {ex.Message}");
+            Console.WriteLine(ex.StackTrace); // Вывод стека вызовов для отладки
+
             return "Произошла ошибка при обработке вашего запроса. Пожалуйста, попробуйте позже.";
         }
+    }
+
+    private IEnumerable<string> SplitMessage(string message, int maxLength)
+    {
+        for (int i = 0; i < message.Length; i += maxLength)
+        {
+            yield return message.Substring(i, Math.Min(maxLength, message.Length - i));
+        }
+    }
+
+    private async Task SendMessage(long chatId, string message)
+    {
+        await _botClient.SendTextMessageAsync(chatId, message);
     }
 
     private bool IsValidInn(string inn)
@@ -37,4 +67,3 @@
         return inn.Length == 10 || inn.Length == 12;
     }
 }
-

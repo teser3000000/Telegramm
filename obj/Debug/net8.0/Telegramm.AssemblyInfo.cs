@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Telegramm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ce943731803122166fb47836ed656f69e3715c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Telegramm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Telegramm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
