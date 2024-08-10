@@ -1169,6 +1169,7 @@
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
       "Microsoft.Extensions.DependencyInjection >= 8.0.0",
       "Microsoft.Extensions.Http >= 8.0.0",
+      "Microsoft.Extensions.Logging.Abstractions >= 8.0.0",
       "Telegram.Bot >= 18.0.0"
     ]
   },
@@ -1237,6 +1238,10 @@
             "version": "[8.0.0, )"
           },
           "Microsoft.Extensions.Http": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Microsoft.Extensions.Logging.Abstractions": {
             "target": "Package",
             "version": "[8.0.0, )"
           },

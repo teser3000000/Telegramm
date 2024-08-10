@@ -69,6 +69,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Telegram.Bot": {
               "target": "Package",
               "version": "[18.0.0, )"
