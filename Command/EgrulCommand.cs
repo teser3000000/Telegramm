@@ -31,7 +31,6 @@ public class EgrulCommand : IBotCommand
             }
             else
             {
-                // Отправляем PDF-файл пользователю
                 await SendPdfFileToUser(chatId, pdfFilePath);
                 return $"Выписка из ЕГРЮЛ для ИНН {inn} успешно отправлена.";
             }

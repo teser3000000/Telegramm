@@ -34,16 +34,16 @@ public class InnCommand : IBotCommand
                 var parts = SplitMessage(resultMessage, MaxMessageLength);
                 foreach (var part in parts)
                 {
-                    await SendMessage(chatId, part); // Отправка частей по очереди
+                    await SendMessage(chatId, part); 
                 }
-                return null; // Возвращаем null, чтобы не отправлять основное сообщение
+                return null; 
             }
             return resultMessage;
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Ошибка при выполнении команды /inn: {ex.Message}");
-            Console.WriteLine(ex.StackTrace); // Вывод стека вызовов для отладки
+            Console.WriteLine(ex.StackTrace); 
 
             return "Произошла ошибка при обработке вашего запроса. Пожалуйста, попробуйте позже.";
         }

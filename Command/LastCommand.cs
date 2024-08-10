@@ -11,7 +11,6 @@
 
     public async Task<string> Execute(string message, long chatId)
     {
-        // Получаем последнюю команду для этого пользователя
         var lastCommandText = _lastActionService.GetLastAction(chatId);
 
         if (string.IsNullOrWhiteSpace(lastCommandText))
@@ -19,7 +18,6 @@
             return "Нет сохраненной последней команды.";
         }
 
-        // Создаем команду для повторного выполнения
         var lastCommand = _commandFactory.CreateCommand(lastCommandText);
 
         if (lastCommand == null)
@@ -29,12 +27,10 @@
 
         try
         {
-            // Выполняем сохраненную команду
             return await lastCommand.Execute(lastCommandText, chatId);
         }
         catch (Exception ex)
         {
-            // Логируем ошибку для разработчиков
             Console.WriteLine($"Ошибка при выполнении команды /last: {ex.Message}");
             return "Произошла ошибка при повторном выполнении команды. Пожалуйста, попробуйте позже.";
         }

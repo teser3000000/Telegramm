@@ -12,8 +12,6 @@ public class BotConfiguration
         ApiBaseUrl = configuration["BotConfig:ApiBaseUrl"];
         ApiKey = Environment.GetEnvironmentVariable("CompanyInfoApiKey") ?? configuration["BotConfig:ApiKeys:CompanyInfoApiKey"];
 
-
-        // Проверка на null
         if (string.IsNullOrEmpty(TelegramToken))
             throw new ArgumentNullException(nameof(TelegramToken), "TelegramToken не может быть null.");
 

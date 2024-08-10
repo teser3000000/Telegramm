@@ -30,7 +30,7 @@ class Program
 
         // Регистрация сервисов и команд
         serviceCollection.AddTransient<ICompanyInfoService, CompanyInfoService>();
-        serviceCollection.AddTransient<ICommandFactory, CommandFactory>(); // Не забудьте эту строку
+        serviceCollection.AddTransient<ICommandFactory, CommandFactory>(); 
         serviceCollection.AddSingleton<ILastActionService, LastActionService>();
 
         // Регистрация команд
@@ -47,8 +47,6 @@ class Program
 
         return serviceCollection.BuildServiceProvider();
     }
-
-
 
     static void Main(string[] args)
     {

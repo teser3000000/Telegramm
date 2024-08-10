@@ -30,13 +30,12 @@ public class MainBot
 
         Console.WriteLine("Бот запущен. Нажмите Ctrl+C для остановки.");
 
-        // Ожидание сигнала завершения (например, Ctrl+C)
         WaitForCancellation(cancellationToken).GetAwaiter().GetResult();
     }
 
     public void Stop()
     {
-        _cts.Cancel(); // Останавливаем процесс получения сообщений
+        _cts.Cancel(); 
         Console.WriteLine("Бот остановлен.");
     }
 
@@ -53,8 +52,7 @@ public class MainBot
                 string response;
 
                 if (command != null)
-                {
-                    // Сохраняем последнюю команду, если она не /last
+                {              
                     if (message.Text != "/last")
                     {
                         _lastActionService.SetLastAction(message.Chat.Id, message.Text);
@@ -63,8 +61,7 @@ public class MainBot
                     response = await command.Execute(message.Text, message.Chat.Id);
                 }
                 else
-                {
-                    // Если команда не распознана и нет сохраненной команды
+                {                  
                     response = "Неизвестная команда. Воспользуйтесь /help для получения списка команд.";
                 }
 
@@ -97,7 +94,7 @@ public class MainBot
     {
         try
         {
-            await Task.Delay(-1, cancellationToken); // Ожидание сигнала отмены
+            await Task.Delay(-1, cancellationToken);
         }
         catch (TaskCanceledException)
         {

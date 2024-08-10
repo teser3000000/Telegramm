@@ -141,14 +141,12 @@ public class CompanyInfoService : ICompanyInfoService
             {
                 var name = suggestion["value"]?.ToString();
                 var address = suggestion["data"]?["address"]?["value"]?.ToString();
-                var okved = suggestion["data"]?["okved"]?.ToString();
 
                 if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(address))
                 {
                     result.AppendLine("Информация о компании:");
                     result.AppendLine($"Наименование: {name}");
                     result.AppendLine($"Адрес: {address}");
-                    result.AppendLine($"okved: {okved}");
                     result.AppendLine(new string('-', 40));
                 }
             }
@@ -174,7 +172,6 @@ public class CompanyInfoService : ICompanyInfoService
 
         if (suggestions != null && suggestions.Any())
         {
-            // Создаем список для хранения всех видов деятельности
             var okvedList = new List<(string name, string code)>();
 
             foreach (var suggestion in suggestions)
@@ -191,13 +188,12 @@ public class CompanyInfoService : ICompanyInfoService
             // Сортируем список по имени в обратном алфавитном порядке
             okvedList = okvedList.OrderByDescending(o => o.name).ToList();
 
-            // Создаем результат
             var result = new StringBuilder();
             foreach (var okved in okvedList)
             {
                 result.AppendLine($"Наименование: {okved.name}");
                 result.AppendLine($"Код ОКВЭД: {okved.code}");
-                result.AppendLine(new string('-', 40)); // Разделительная линия
+                result.AppendLine(new string('-', 40)); 
             }
 
             return result.ToString().Trim();
