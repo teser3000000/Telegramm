@@ -8,6 +8,7 @@ public class MainBot
     private readonly ITelegramBotClient _botClient;
     private readonly ICommandFactory _commandFactory;
     private readonly ILastActionService _lastActionService;
+    private CancellationTokenSource _cts;
 
     public MainBot(ITelegramBotClient botClient, ICommandFactory commandFactory, ILastActionService lastActionService)
     {
@@ -18,18 +19,25 @@ public class MainBot
 
     public void Start()
     {
-        var cancellationToken = new CancellationTokenSource().Token;
+        _cts = new CancellationTokenSource();
+        var cancellationToken = _cts.Token;
 
         _botClient.StartReceiving(
             updateHandler: HandleUpdateAsync,
             pollingErrorHandler: HandleErrorAsync,
             cancellationToken: cancellationToken
         );
+
+        Console.WriteLine("Бот запущен. Нажмите Ctrl+C для остановки.");
+
+        // Ожидание сигнала завершения (например, Ctrl+C)
+        WaitForCancellation(cancellationToken).GetAwaiter().GetResult();
     }
 
     public void Stop()
     {
-        // если требуется поддержка остановки
+        _cts.Cancel(); // Останавливаем процесс получения сообщений
+        Console.WriteLine("Бот остановлен.");
     }
 
     private async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
@@ -85,5 +93,15 @@ public class MainBot
         return Task.CompletedTask;
     }
 
-
+    private async Task WaitForCancellation(CancellationToken cancellationToken)
+    {
+        try
+        {
+            await Task.Delay(-1, cancellationToken); // Ожидание сигнала отмены
+        }
+        catch (TaskCanceledException)
+        {
+            // Задача была отменена (например, вызовом Stop())
+        }
+    }
 }

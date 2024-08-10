@@ -37,3 +37,4 @@ C:\Users\User\source\repos\Telegramm\obj\Debug\net8.0\refint\Telegramm.dll
 C:\Users\User\source\repos\Telegramm\obj\Debug\net8.0\Telegramm.pdb
 C:\Users\User\source\repos\Telegramm\obj\Debug\net8.0\Telegramm.genruntimeconfig.cache
 C:\Users\User\source\repos\Telegramm\obj\Debug\net8.0\ref\Telegramm.dll
+C:\Users\User\source\repos\Telegramm\bin\Debug\net8.0\Docker.DotNet.dll
