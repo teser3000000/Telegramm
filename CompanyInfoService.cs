@@ -174,14 +174,30 @@ public class CompanyInfoService : ICompanyInfoService
 
         if (suggestions != null && suggestions.Any())
         {
-            var result = new StringBuilder();
-            var name = suggestions[0]?["value"]?.ToString();
-            var code = suggestions[0]?["data"]?["kod"]?.ToString();
+            // Создаем список для хранения всех видов деятельности
+            var okvedList = new List<(string name, string code)>();
 
-            if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(code))
+            foreach (var suggestion in suggestions)
             {
-                result.AppendLine($"Наименование: {name}");
-                result.AppendLine($"Код ОКВЭД: {code}");
+                var name = suggestion["value"]?.ToString();
+                var code = suggestion["data"]?["kod"]?.ToString();
+
+                if (!string.IsNullOrEmpty(name) && !string.IsNullOrEmpty(code))
+                {
+                    okvedList.Add((name, code));
+                }
+            }
+
+            // Сортируем список по имени в обратном алфавитном порядке
+            okvedList = okvedList.OrderByDescending(o => o.name).ToList();
+
+            // Создаем результат
+            var result = new StringBuilder();
+            foreach (var okved in okvedList)
+            {
+                result.AppendLine($"Наименование: {okved.name}");
+                result.AppendLine($"Код ОКВЭД: {okved.code}");
+                result.AppendLine(new string('-', 40)); // Разделительная линия
             }
 
             return result.ToString().Trim();
@@ -189,4 +205,5 @@ public class CompanyInfoService : ICompanyInfoService
 
         return "Информация о ОКВЭД не найдена.";
     }
+
 }
